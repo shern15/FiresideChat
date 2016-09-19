@@ -7,13 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E2158E791CFE0EA200870600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158E781CFE0EA200870600 /* main.m */; };
-		E2158E7C1CFE0EA200870600 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158E7B1CFE0EA200870600 /* AppDelegate.m */; };
-		E2158E7F1CFE0EA200870600 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158E7E1CFE0EA200870600 /* ViewController.m */; };
-		E2158E821CFE0EA300870600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2158E801CFE0EA300870600 /* Main.storyboard */; };
+		4CA0F0986626D772A83CF900 /* libPods-FiresideChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E27139850B300E74CE7F277A /* libPods-FiresideChat.a */; };
+		A32D268475E13F3F49510987 /* libPods-FiresideChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD707AAB03039E864B873EF /* libPods-FiresideChatTests.a */; };
 		E2158E841CFE0EA300870600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2158E831CFE0EA300870600 /* Assets.xcassets */; };
-		E2158E871CFE0EA300870600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2158E851CFE0EA300870600 /* LaunchScreen.storyboard */; };
 		E2158E921CFE0EA500870600 /* FiresideChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158E911CFE0EA500870600 /* FiresideChatTests.m */; };
+		E2158EE61CFE0FE600870600 /* SFCArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158E9F1CFE0FE600870600 /* SFCArrayDataSource.m */; };
+		E2158EE71CFE0FE600870600 /* SFCContactImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EA11CFE0FE600870600 /* SFCContactImporter.m */; };
+		E2158EE81CFE0FE600870600 /* SFCContextSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EA41CFE0FE600870600 /* SFCContextSynchronizer.m */; };
+		E2158EE91CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EA91CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.m */; };
+		E2158EEB1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EAE1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.m */; };
+		E2158EEC1CFE0FE600870600 /* UIColor+SFCViewColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EB01CFE0FE600870600 /* UIColor+SFCViewColors.m */; };
+		E2158EED1CFE0FE600870600 /* UIImage+SHColoredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EB21CFE0FE600870600 /* UIImage+SHColoredImage.m */; };
+		E2158EEE1CFE0FE600870600 /* UIImage+SHMirrorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EB41CFE0FE600870600 /* UIImage+SHMirrorImage.m */; };
+		E2158EEF1CFE0FE600870600 /* UITableView+SFCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EB61CFE0FE600870600 /* UITableView+SFCAdditions.m */; };
+		E2158EF01CFE0FE600870600 /* UIViewController+SHFillWithView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EB81CFE0FE600870600 /* UIViewController+SHFillWithView.m */; };
+		E2158EF21CFE0FE600870600 /* SFCContact+SFCFirebaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EC01CFE0FE600870600 /* SFCContact+SFCFirebaseModel.m */; };
+		E2158EF31CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EC21CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.m */; };
+		E2158EF51CFE0FE600870600 /* SFCChat.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EC61CFE0FE600870600 /* SFCChat.m */; };
+		E2158EF61CFE0FE600870600 /* SFCContact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EC81CFE0FE600870600 /* SFCContact+CoreDataProperties.m */; };
+		E2158EF71CFE0FE600870600 /* SFCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ECA1CFE0FE600870600 /* SFCContact.m */; };
+		E2158EF81CFE0FE600870600 /* SFCMessage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ECC1CFE0FE600870600 /* SFCMessage+CoreDataProperties.m */; };
+		E2158EF91CFE0FE600870600 /* SFCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ECE1CFE0FE600870600 /* SFCMessage.m */; };
+		E2158EFA1CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ED01CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.m */; };
+		E2158EFB1CFE0FE600870600 /* SFCPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ED21CFE0FE600870600 /* SFCPhoneNumber.m */; };
+		E2158EFC1CFE0FE600870600 /* SFCCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158ED41CFE0FE600870600 /* SFCCoreDataStack.m */; };
+		E2158EFD1CFE0FE600870600 /* FiresideChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2158ED61CFE0FE600870600 /* FiresideChat.xcdatamodeld */; };
+		E2158EFE1CFE0FE600870600 /* SFCTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EDF1CFE0FE600870600 /* SFCTableViewAdapter.m */; };
+		E2158EFF1CFE0FE600870600 /* SFCKeyboardEventViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158EE21CFE0FE600870600 /* SFCKeyboardEventViewAnimator.m */; };
+		E2158FDB1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158F7F1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.m */; };
+		E2158FDC1CFE18E500870600 /* SFCAddParticipantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158F821CFE18E500870600 /* SFCAddParticipantsViewController.m */; };
+		E2158FE01CFE18E500870600 /* SFCChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158F911CFE18E500870600 /* SFCChatTableViewCell.m */; };
+		E2158FE21CFE18E500870600 /* SFCChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158F951CFE18E500870600 /* SFCChatViewController.m */; };
+		E2158FE31CFE18E500870600 /* SFCComposeChatTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158F9C1CFE18E500870600 /* SFCComposeChatTableViewAdapter.m */; };
+		E2158FE41CFE18E500870600 /* SFCContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FA01CFE18E500870600 /* SFCContactCell.m */; };
+		E2158FE51CFE18E500870600 /* SFCComposeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FA21CFE18E500870600 /* SFCComposeChatViewController.m */; };
+		E2158FE61CFE18E500870600 /* SFCComposeGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FA81CFE18E500870600 /* SFCComposeGroupViewController.m */; };
+		E2158FE71CFE18E500870600 /* SFCContactsTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FAD1CFE18E500870600 /* SFCContactsTableViewAdapter.m */; };
+		E2158FE81CFE18E500870600 /* SFCContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FB11CFE18E500870600 /* SFCContactsViewController.m */; };
+		E2158FE91CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FB61CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.m */; };
+		E2158FEA1CFE18E500870600 /* SFCContactsSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FB91CFE18E500870600 /* SFCContactsSearchResultsViewController.m */; };
+		E2158FEB1CFE18E500870600 /* SFCFavoritesTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FBE1CFE18E500870600 /* SFCFavoritesTableViewAdapter.m */; };
+		E2158FEC1CFE18E500870600 /* SFCFavoriteContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FC21CFE18E500870600 /* SFCFavoriteContactCell.m */; };
+		E2158FED1CFE18E500870600 /* SFCFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FC41CFE18E500870600 /* SFCFavoritesViewController.m */; };
+		E2158FEF1CFE18E500870600 /* SFCMessagesTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FCD1CFE18E500870600 /* SFCMessagesTableViewAdapter.m */; };
+		E2158FF01CFE18E500870600 /* SFCMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FD11CFE18E500870600 /* SFCMessageTableViewCell.m */; };
+		E2158FF11CFE18E500870600 /* SFCMessagesSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FD31CFE18E500870600 /* SFCMessagesSectionHeaderView.m */; };
+		E2158FF21CFE18E500870600 /* SFCMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FD51CFE18E500870600 /* SFCMessagesViewController.m */; };
+		E2158FF31CFE18E500870600 /* SFCSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FDA1CFE18E500870600 /* SFCSignUpViewController.m */; };
+		E2158FF91CFE251300870600 /* SFCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FF81CFE251300870600 /* SFCAppDelegate.m */; };
+		E2158FFB1CFE507E00870600 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2158FFA1CFE507E00870600 /* main.m */; };
+		E22E69F91D6F2CBB00A67772 /* SFCFirebaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E69F81D6F2CBB00A67772 /* SFCFirebaseStore.m */; };
+		E22E6A141D70C2FC00A67772 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = E22E6A131D70C2FC00A67772 /* UIColor+HexString.m */; };
+		E255A53C1D19164900147576 /* SFCRootContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E255A53B1D19164900147576 /* SFCRootContainerViewController.m */; };
+		E25C21DF1D0F4759007104CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E25C21DE1D0F4759007104CD /* GoogleService-Info.plist */; };
+		E26A743B1D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = E26A743A1D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.m */; };
+		E26A743E1D7D98E60006181E /* NSDate+SHDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = E26A743D1D7D98E60006181E /* NSDate+SHDateComponents.m */; };
+		E26A74571D7F840E0006181E /* SFCChat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E26A74561D7F840E0006181E /* SFCChat+CoreDataProperties.m */; };
+		E26A745A1D7FD06C0006181E /* SFCChatTableViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E26A74591D7FD06C0006181E /* SFCChatTableViewHeader.m */; };
+		E27AA8341D82372500520781 /* SFCChatTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E27AA8331D82372500520781 /* SFCChatTableViewAdapter.m */; };
+		E27E84D01D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84CF1D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.m */; };
+		E27E84D31D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84D21D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.m */; };
+		E27E84D91D8A52D000D602C6 /* SFCGroupDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84D81D8A52D000D602C6 /* SFCGroupDetailsViewController.m */; };
+		E27E84DD1D8A569D00D602C6 /* SFCGroupDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84DC1D8A569D00D602C6 /* SFCGroupDetailsCell.m */; };
+		E27E84EB1D8B08D500D602C6 /* SFCSelectContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84EA1D8B08D500D602C6 /* SFCSelectContactsViewController.m */; };
+		E27E84EE1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84ED1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.m */; };
+		E27E84F51D8B173400D602C6 /* SFCSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84F21D8B173400D602C6 /* SFCSearchField.m */; };
+		E27E84F61D8B173400D602C6 /* SFCSearchFieldHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E84F41D8B173400D602C6 /* SFCSearchFieldHeaderView.m */; };
+		E292E4861D108BCB00549A94 /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E292E4851D108BCA00549A94 /* License.rtf */; };
+		E29709A61CFEA6FE00C1FE45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29709A21CFEA6FE00C1FE45 /* LaunchScreen.storyboard */; };
+		E29709AA1CFEA99400C1FE45 /* SFCCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E29709A91CFEA99400C1FE45 /* SFCCustomButton.m */; };
+		E29709AD1D00BE9800C1FE45 /* Slabo27px.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E29709AC1D00BE9700C1FE45 /* Slabo27px.ttf */; };
+		E29709B31D00C1C800C1FE45 /* SFCCustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E29709B21D00C1C800C1FE45 /* SFCCustomTextField.m */; };
+		E29709B61D00CBE900C1FE45 /* UIButton+SHButtonAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E29709B51D00CBE900C1FE45 /* UIButton+SHButtonAnimation.m */; };
+		E2AF79491D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AF79481D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.m */; };
+		E2DAF27A1D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DAF2791D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.m */; };
+		E2DCA7951D0B50B8009595C2 /* SFCShowTextFieldAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DCA7941D0B50B8009595C2 /* SFCShowTextFieldAnimator.m */; };
+		E2DCA79A1D0F3179009595C2 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DCA7991D0F3179009595C2 /* SignUpViewController.storyboard */; };
+		E2EBF6F51D4973B500A58576 /* SFCEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EBF6F41D4973B500A58576 /* SFCEdgeInsetsLabel.m */; };
+		E2EBF6F81D498EEC00A58576 /* SFCUserBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EBF6F71D498EEC00A58576 /* SFCUserBubbleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +98,171 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AD707AAB03039E864B873EF /* libPods-FiresideChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiresideChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B644EC6A91EA73841ACDCD /* Pods-FiresideChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiresideChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiresideChatTests/Pods-FiresideChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		6573870B50CFBC9BE4930A9A /* Pods-FiresideChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiresideChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiresideChatTests/Pods-FiresideChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2158E741CFE0E9400870600 /* FiresideChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiresideChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2158E781CFE0EA200870600 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2158E7A1CFE0EA200870600 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2158E7B1CFE0EA200870600 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E2158E7D1CFE0EA200870600 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E2158E7E1CFE0EA200870600 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E2158E811CFE0EA300870600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2158E831CFE0EA300870600 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E2158E861CFE0EA300870600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2158E881CFE0EA300870600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2158E8D1CFE0EA500870600 /* FiresideChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiresideChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2158E911CFE0EA500870600 /* FiresideChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiresideChatTests.m; sourceTree = "<group>"; };
 		E2158E931CFE0EA500870600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2158E9E1CFE0FE600870600 /* SFCArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCArrayDataSource.h; sourceTree = "<group>"; };
+		E2158E9F1CFE0FE600870600 /* SFCArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCArrayDataSource.m; sourceTree = "<group>"; };
+		E2158EA01CFE0FE600870600 /* SFCContactImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactImporter.h; sourceTree = "<group>"; };
+		E2158EA11CFE0FE600870600 /* SFCContactImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactImporter.m; sourceTree = "<group>"; };
+		E2158EA21CFE0FE600870600 /* SFCContextConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContextConsumer.h; sourceTree = "<group>"; };
+		E2158EA31CFE0FE600870600 /* SFCContextSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContextSynchronizer.h; sourceTree = "<group>"; };
+		E2158EA41CFE0FE600870600 /* SFCContextSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContextSynchronizer.m; sourceTree = "<group>"; };
+		E2158EA51CFE0FE600870600 /* SFCCoreDataStackConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCCoreDataStackConsumer.h; sourceTree = "<group>"; };
+		E2158EA61CFE0FE600870600 /* SFCDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCDataSourceDelegate.h; sourceTree = "<group>"; };
+		E2158EA71CFE0FE600870600 /* SFCDataSourceInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCDataSourceInterface.h; sourceTree = "<group>"; };
+		E2158EA81CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		E2158EA91CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
+		E2158EAD1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+SHKeyboardProperties.h"; sourceTree = "<group>"; };
+		E2158EAE1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+SHKeyboardProperties.m"; sourceTree = "<group>"; };
+		E2158EAF1CFE0FE600870600 /* UIColor+SFCViewColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SFCViewColors.h"; sourceTree = "<group>"; };
+		E2158EB01CFE0FE600870600 /* UIColor+SFCViewColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SFCViewColors.m"; sourceTree = "<group>"; };
+		E2158EB11CFE0FE600870600 /* UIImage+SHColoredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHColoredImage.h"; sourceTree = "<group>"; };
+		E2158EB21CFE0FE600870600 /* UIImage+SHColoredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHColoredImage.m"; sourceTree = "<group>"; };
+		E2158EB31CFE0FE600870600 /* UIImage+SHMirrorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHMirrorImage.h"; sourceTree = "<group>"; };
+		E2158EB41CFE0FE600870600 /* UIImage+SHMirrorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHMirrorImage.m"; sourceTree = "<group>"; };
+		E2158EB51CFE0FE600870600 /* UITableView+SFCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SFCAdditions.h"; sourceTree = "<group>"; };
+		E2158EB61CFE0FE600870600 /* UITableView+SFCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SFCAdditions.m"; sourceTree = "<group>"; };
+		E2158EB71CFE0FE600870600 /* UIViewController+SHFillWithView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SHFillWithView.h"; sourceTree = "<group>"; };
+		E2158EB81CFE0FE600870600 /* UIViewController+SHFillWithView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SHFillWithView.m"; sourceTree = "<group>"; };
+		E2158EBF1CFE0FE600870600 /* SFCContact+SFCFirebaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCContact+SFCFirebaseModel.h"; sourceTree = "<group>"; };
+		E2158EC01CFE0FE600870600 /* SFCContact+SFCFirebaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCContact+SFCFirebaseModel.m"; sourceTree = "<group>"; };
+		E2158EC11CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCMessage+SFCFirebaseModel.h"; sourceTree = "<group>"; };
+		E2158EC21CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCMessage+SFCFirebaseModel.m"; sourceTree = "<group>"; };
+		E2158EC51CFE0FE600870600 /* SFCChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCChat.h; sourceTree = "<group>"; };
+		E2158EC61CFE0FE600870600 /* SFCChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCChat.m; sourceTree = "<group>"; };
+		E2158EC71CFE0FE600870600 /* SFCContact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCContact+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2158EC81CFE0FE600870600 /* SFCContact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCContact+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2158EC91CFE0FE600870600 /* SFCContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContact.h; sourceTree = "<group>"; };
+		E2158ECA1CFE0FE600870600 /* SFCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContact.m; sourceTree = "<group>"; };
+		E2158ECB1CFE0FE600870600 /* SFCMessage+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCMessage+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2158ECC1CFE0FE600870600 /* SFCMessage+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCMessage+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2158ECD1CFE0FE600870600 /* SFCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessage.h; sourceTree = "<group>"; };
+		E2158ECE1CFE0FE600870600 /* SFCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessage.m; sourceTree = "<group>"; };
+		E2158ECF1CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCPhoneNumber+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E2158ED01CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCPhoneNumber+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E2158ED11CFE0FE600870600 /* SFCPhoneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCPhoneNumber.h; sourceTree = "<group>"; };
+		E2158ED21CFE0FE600870600 /* SFCPhoneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCPhoneNumber.m; sourceTree = "<group>"; };
+		E2158ED31CFE0FE600870600 /* SFCCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCCoreDataStack.h; sourceTree = "<group>"; };
+		E2158ED41CFE0FE600870600 /* SFCCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCCoreDataStack.m; sourceTree = "<group>"; };
+		E2158ED51CFE0FE600870600 /* SFCRemoteStoreInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCRemoteStoreInterface.h; sourceTree = "<group>"; };
+		E2158ED71CFE0FE600870600 /* FiresideChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiresideChat.xcdatamodel; sourceTree = "<group>"; };
+		E2158EDA1CFE0FE600870600 /* SFCAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAdapter.h; sourceTree = "<group>"; };
+		E2158EDB1CFE0FE600870600 /* SFCAdapterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAdapterDelegate.h; sourceTree = "<group>"; };
+		E2158EDC1CFE0FE600870600 /* SFCObjectConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCObjectConsumer.h; sourceTree = "<group>"; };
+		E2158EDE1CFE0FE600870600 /* SFCTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158EDF1CFE0FE600870600 /* SFCTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158EE11CFE0FE600870600 /* SFCKeyboardEventViewAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCKeyboardEventViewAnimator.h; sourceTree = "<group>"; };
+		E2158EE21CFE0FE600870600 /* SFCKeyboardEventViewAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCKeyboardEventViewAnimator.m; sourceTree = "<group>"; };
+		E2158EE51CFE0FE600870600 /* SFCChatCreationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCChatCreationDelegate.h; sourceTree = "<group>"; };
+		E2158F7E1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAddParticipantsTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158F7F1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAddParticipantsTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158F811CFE18E500870600 /* SFCAddParticipantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAddParticipantsViewController.h; sourceTree = "<group>"; };
+		E2158F821CFE18E500870600 /* SFCAddParticipantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAddParticipantsViewController.m; sourceTree = "<group>"; };
+		E2158F901CFE18E500870600 /* SFCChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCChatTableViewCell.h; sourceTree = "<group>"; };
+		E2158F911CFE18E500870600 /* SFCChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCChatTableViewCell.m; sourceTree = "<group>"; };
+		E2158F941CFE18E500870600 /* SFCChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCChatViewController.h; sourceTree = "<group>"; };
+		E2158F951CFE18E500870600 /* SFCChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCChatViewController.m; sourceTree = "<group>"; };
+		E2158F9B1CFE18E500870600 /* SFCComposeChatTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCComposeChatTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158F9C1CFE18E500870600 /* SFCComposeChatTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCComposeChatTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158F9F1CFE18E500870600 /* SFCContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactCell.h; sourceTree = "<group>"; };
+		E2158FA01CFE18E500870600 /* SFCContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactCell.m; sourceTree = "<group>"; };
+		E2158FA11CFE18E500870600 /* SFCComposeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCComposeChatViewController.h; sourceTree = "<group>"; };
+		E2158FA21CFE18E500870600 /* SFCComposeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCComposeChatViewController.m; sourceTree = "<group>"; };
+		E2158FA71CFE18E500870600 /* SFCComposeGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCComposeGroupViewController.h; sourceTree = "<group>"; };
+		E2158FA81CFE18E500870600 /* SFCComposeGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCComposeGroupViewController.m; sourceTree = "<group>"; };
+		E2158FAC1CFE18E500870600 /* SFCContactsTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactsTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158FAD1CFE18E500870600 /* SFCContactsTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactsTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158FB01CFE18E500870600 /* SFCContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactsViewController.h; sourceTree = "<group>"; };
+		E2158FB11CFE18E500870600 /* SFCContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactsViewController.m; sourceTree = "<group>"; };
+		E2158FB51CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactsSearchResultsTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158FB61CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactsSearchResultsTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158FB81CFE18E500870600 /* SFCContactsSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCContactsSearchResultsViewController.h; sourceTree = "<group>"; };
+		E2158FB91CFE18E500870600 /* SFCContactsSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCContactsSearchResultsViewController.m; sourceTree = "<group>"; };
+		E2158FBD1CFE18E500870600 /* SFCFavoritesTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFavoritesTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158FBE1CFE18E500870600 /* SFCFavoritesTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFavoritesTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158FC11CFE18E500870600 /* SFCFavoriteContactCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFavoriteContactCell.h; sourceTree = "<group>"; };
+		E2158FC21CFE18E500870600 /* SFCFavoriteContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFavoriteContactCell.m; sourceTree = "<group>"; };
+		E2158FC31CFE18E500870600 /* SFCFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCFavoritesViewController.h; sourceTree = "<group>"; };
+		E2158FC41CFE18E500870600 /* SFCFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCFavoritesViewController.m; sourceTree = "<group>"; };
+		E2158FCC1CFE18E500870600 /* SFCMessagesTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessagesTableViewAdapter.h; sourceTree = "<group>"; };
+		E2158FCD1CFE18E500870600 /* SFCMessagesTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessagesTableViewAdapter.m; sourceTree = "<group>"; };
+		E2158FD01CFE18E500870600 /* SFCMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessageTableViewCell.h; sourceTree = "<group>"; };
+		E2158FD11CFE18E500870600 /* SFCMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessageTableViewCell.m; sourceTree = "<group>"; };
+		E2158FD21CFE18E500870600 /* SFCMessagesSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessagesSectionHeaderView.h; sourceTree = "<group>"; };
+		E2158FD31CFE18E500870600 /* SFCMessagesSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessagesSectionHeaderView.m; sourceTree = "<group>"; };
+		E2158FD41CFE18E500870600 /* SFCMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessagesViewController.h; sourceTree = "<group>"; };
+		E2158FD51CFE18E500870600 /* SFCMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessagesViewController.m; sourceTree = "<group>"; };
+		E2158FD91CFE18E500870600 /* SFCSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCSignUpViewController.h; sourceTree = "<group>"; };
+		E2158FDA1CFE18E500870600 /* SFCSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCSignUpViewController.m; sourceTree = "<group>"; };
+		E2158FF71CFE251300870600 /* SFCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCAppDelegate.h; sourceTree = "<group>"; };
+		E2158FF81CFE251300870600 /* SFCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCAppDelegate.m; sourceTree = "<group>"; };
+		E2158FFA1CFE507E00870600 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E22E69F61D6F2CBB00A67772 /* SFCFirebaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCFirebaseModel.h; path = Firebase/SFCFirebaseModel.h; sourceTree = "<group>"; };
+		E22E69F71D6F2CBB00A67772 /* SFCFirebaseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCFirebaseStore.h; path = Firebase/SFCFirebaseStore.h; sourceTree = "<group>"; };
+		E22E69F81D6F2CBB00A67772 /* SFCFirebaseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCFirebaseStore.m; path = Firebase/SFCFirebaseStore.m; sourceTree = "<group>"; };
+		E22E6A111D70C28B00A67772 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		E22E6A131D70C2FC00A67772 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		E255A53A1D19164900147576 /* SFCRootContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCRootContainerViewController.h; path = "Root Container/View/SFCRootContainerViewController.h"; sourceTree = "<group>"; };
+		E255A53B1D19164900147576 /* SFCRootContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCRootContainerViewController.m; path = "Root Container/View/SFCRootContainerViewController.m"; sourceTree = "<group>"; };
+		E255A53E1D19B6A000147576 /* SFCLoginStateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCLoginStateDelegate.h; sourceTree = "<group>"; };
+		E25C21DE1D0F4759007104CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E26A74391D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+SFCNavigationBarAppearance.h"; sourceTree = "<group>"; };
+		E26A743A1D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+SFCNavigationBarAppearance.m"; sourceTree = "<group>"; };
+		E26A743C1D7D98E60006181E /* NSDate+SHDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SHDateComponents.h"; sourceTree = "<group>"; };
+		E26A743D1D7D98E60006181E /* NSDate+SHDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SHDateComponents.m"; sourceTree = "<group>"; };
+		E26A74551D7F840E0006181E /* SFCChat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCChat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E26A74561D7F840E0006181E /* SFCChat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCChat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E26A74581D7FD06C0006181E /* SFCChatTableViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCChatTableViewHeader.h; sourceTree = "<group>"; };
+		E26A74591D7FD06C0006181E /* SFCChatTableViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCChatTableViewHeader.m; sourceTree = "<group>"; };
+		E27139850B300E74CE7F277A /* libPods-FiresideChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FiresideChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27AA8321D82372500520781 /* SFCChatTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCChatTableViewAdapter.h; path = "User Interface/Adapter/SFCChatTableViewAdapter.h"; sourceTree = "<group>"; };
+		E27AA8331D82372500520781 /* SFCChatTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCChatTableViewAdapter.m; path = "User Interface/Adapter/SFCChatTableViewAdapter.m"; sourceTree = "<group>"; };
+		E27E84CE1D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCMessagesParticipantsHeaderView.h; sourceTree = "<group>"; };
+		E27E84CF1D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCMessagesParticipantsHeaderView.m; sourceTree = "<group>"; };
+		E27E84D11D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+SHStoredUserDefaults.h"; sourceTree = "<group>"; };
+		E27E84D21D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+SHStoredUserDefaults.m"; sourceTree = "<group>"; };
+		E27E84D71D8A52D000D602C6 /* SFCGroupDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCGroupDetailsViewController.h; path = "GroupChatDetailsViewController/User Interface/View/SFCGroupDetailsViewController.h"; sourceTree = "<group>"; };
+		E27E84D81D8A52D000D602C6 /* SFCGroupDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCGroupDetailsViewController.m; path = "GroupChatDetailsViewController/User Interface/View/SFCGroupDetailsViewController.m"; sourceTree = "<group>"; };
+		E27E84DB1D8A569D00D602C6 /* SFCGroupDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCGroupDetailsCell.h; path = GroupChatDetailsViewController/Cells/SFCGroupDetailsCell.h; sourceTree = "<group>"; };
+		E27E84DC1D8A569D00D602C6 /* SFCGroupDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCGroupDetailsCell.m; path = GroupChatDetailsViewController/Cells/SFCGroupDetailsCell.m; sourceTree = "<group>"; };
+		E27E84E91D8B08D500D602C6 /* SFCSelectContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCSelectContactsViewController.h; path = "Select Contacts/User Interface/View/SFCSelectContactsViewController.h"; sourceTree = "<group>"; };
+		E27E84EA1D8B08D500D602C6 /* SFCSelectContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCSelectContactsViewController.m; path = "Select Contacts/User Interface/View/SFCSelectContactsViewController.m"; sourceTree = "<group>"; };
+		E27E84EC1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCSelectContactsTableViewAdapter.h; path = "Select Contacts/User Interface/Adapter/SFCSelectContactsTableViewAdapter.h"; sourceTree = "<group>"; };
+		E27E84ED1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCSelectContactsTableViewAdapter.m; path = "Select Contacts/User Interface/Adapter/SFCSelectContactsTableViewAdapter.m"; sourceTree = "<group>"; };
+		E27E84F01D8B0B8C00D602C6 /* SFCSelectContactsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCSelectContactsDelegate.h; path = "Select Contacts/User Interface/View Controller Delegate/SFCSelectContactsDelegate.h"; sourceTree = "<group>"; };
+		E27E84F11D8B173400D602C6 /* SFCSearchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCSearchField.h; path = "Select Contacts/User Interface/View/SFCSearchField.h"; sourceTree = "<group>"; };
+		E27E84F21D8B173400D602C6 /* SFCSearchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCSearchField.m; path = "Select Contacts/User Interface/View/SFCSearchField.m"; sourceTree = "<group>"; };
+		E27E84F31D8B173400D602C6 /* SFCSearchFieldHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFCSearchFieldHeaderView.h; path = "Select Contacts/User Interface/View/SFCSearchFieldHeaderView.h"; sourceTree = "<group>"; };
+		E27E84F41D8B173400D602C6 /* SFCSearchFieldHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFCSearchFieldHeaderView.m; path = "Select Contacts/User Interface/View/SFCSearchFieldHeaderView.m"; sourceTree = "<group>"; };
+		E292E4851D108BCA00549A94 /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = License.rtf; path = Resources/License.rtf; sourceTree = "<group>"; };
+		E29709A31CFEA6FE00C1FE45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E29709A81CFEA99400C1FE45 /* SFCCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCCustomButton.h; sourceTree = "<group>"; };
+		E29709A91CFEA99400C1FE45 /* SFCCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCCustomButton.m; sourceTree = "<group>"; };
+		E29709AC1D00BE9700C1FE45 /* Slabo27px.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Slabo27px.ttf; path = FiresideChat/Resources/Slabo27px.ttf; sourceTree = "<group>"; };
+		E29709B11D00C1C800C1FE45 /* SFCCustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCCustomTextField.h; sourceTree = "<group>"; };
+		E29709B21D00C1C800C1FE45 /* SFCCustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCCustomTextField.m; sourceTree = "<group>"; };
+		E29709B41D00CBE900C1FE45 /* UIButton+SHButtonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SHButtonAnimation.h"; sourceTree = "<group>"; };
+		E29709B51D00CBE900C1FE45 /* UIButton+SHButtonAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SHButtonAnimation.m"; sourceTree = "<group>"; };
+		E2AF79471D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+SHSaveContext.h"; sourceTree = "<group>"; };
+		E2AF79481D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+SHSaveContext.m"; sourceTree = "<group>"; };
+		E2DAF2781D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFCChat+SFCFirebaseModel.h"; sourceTree = "<group>"; };
+		E2DAF2791D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SFCChat+SFCFirebaseModel.m"; sourceTree = "<group>"; };
+		E2DCA7931D0B50B8009595C2 /* SFCShowTextFieldAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCShowTextFieldAnimator.h; sourceTree = "<group>"; };
+		E2DCA7941D0B50B8009595C2 /* SFCShowTextFieldAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCShowTextFieldAnimator.m; sourceTree = "<group>"; };
+		E2DCA7991D0F3179009595C2 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		E2EBF6F31D4973B500A58576 /* SFCEdgeInsetsLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCEdgeInsetsLabel.h; sourceTree = "<group>"; };
+		E2EBF6F41D4973B500A58576 /* SFCEdgeInsetsLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCEdgeInsetsLabel.m; sourceTree = "<group>"; };
+		E2EBF6F61D498EEC00A58576 /* SFCUserBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCUserBubbleView.h; sourceTree = "<group>"; };
+		E2EBF6F71D498EEC00A58576 /* SFCUserBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCUserBubbleView.m; sourceTree = "<group>"; };
+		E42027F125AFB27B73239104 /* Pods-FiresideChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiresideChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiresideChat/Pods-FiresideChat.debug.xcconfig"; sourceTree = "<group>"; };
+		EA135EE586091EB1016115A5 /* Pods-FiresideChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiresideChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiresideChat/Pods-FiresideChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +270,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA0F0986626D772A83CF900 /* libPods-FiresideChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +278,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32D268475E13F3F49510987 /* libPods-FiresideChatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DEE0FAF14E75C63CFBDAED9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E42027F125AFB27B73239104 /* Pods-FiresideChat.debug.xcconfig */,
+				EA135EE586091EB1016115A5 /* Pods-FiresideChat.release.xcconfig */,
+				6573870B50CFBC9BE4930A9A /* Pods-FiresideChatTests.debug.xcconfig */,
+				47B644EC6A91EA73841ACDCD /* Pods-FiresideChatTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C523C55BD69F181EAA79D04B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E27139850B300E74CE7F277A /* libPods-FiresideChat.a */,
+				1AD707AAB03039E864B873EF /* libPods-FiresideChatTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2158E6B1CFE0E9200870600 = {
 			isa = PBXGroup;
 			children = (
 				E2158E761CFE0EA200870600 /* FiresideChat */,
 				E2158E901CFE0EA500870600 /* FiresideChatTests */,
 				E2158E751CFE0E9400870600 /* Products */,
+				4DEE0FAF14E75C63CFBDAED9 /* Pods */,
+				C523C55BD69F181EAA79D04B /* Frameworks */,
+				E29709AB1D00BE0300C1FE45 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +329,15 @@
 		E2158E761CFE0EA200870600 /* FiresideChat */ = {
 			isa = PBXGroup;
 			children = (
-				E2158E7A1CFE0EA200870600 /* AppDelegate.h */,
-				E2158E7B1CFE0EA200870600 /* AppDelegate.m */,
-				E2158E7D1CFE0EA200870600 /* ViewController.h */,
-				E2158E7E1CFE0EA200870600 /* ViewController.m */,
-				E2158E801CFE0EA300870600 /* Main.storyboard */,
+				E297099C1CFE60D200C1FE45 /* External Dependencies */,
+				E2158E9C1CFE0FE600870600 /* Common */,
+				E2158F7A1CFE18E500870600 /* Module */,
+				E2158FF71CFE251300870600 /* SFCAppDelegate.h */,
+				E2158FF81CFE251300870600 /* SFCAppDelegate.m */,
+				E29709A21CFEA6FE00C1FE45 /* LaunchScreen.storyboard */,
 				E2158E831CFE0EA300870600 /* Assets.xcassets */,
-				E2158E851CFE0EA300870600 /* LaunchScreen.storyboard */,
 				E2158E881CFE0EA300870600 /* Info.plist */,
+				E25C21DE1D0F4759007104CD /* GoogleService-Info.plist */,
 				E2158E771CFE0EA200870600 /* Supporting Files */,
 			);
 			path = FiresideChat;
@@ -97,7 +346,8 @@
 		E2158E771CFE0EA200870600 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2158E781CFE0EA200870600 /* main.m */,
+				E2158FFA1CFE507E00870600 /* main.m */,
+				E292E4851D108BCA00549A94 /* License.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -111,6 +361,678 @@
 			path = FiresideChatTests;
 			sourceTree = "<group>";
 		};
+		E2158E9C1CFE0FE600870600 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E2158E9D1CFE0FE600870600 /* Application Logic */,
+				E2158EAC1CFE0FE600870600 /* Category */,
+				E2158EB91CFE0FE600870600 /* Store */,
+				E2158ED81CFE0FE600870600 /* User Interface */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E2158E9D1CFE0FE600870600 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E22E69F51D6F2BDD00A67772 /* Firebase */,
+				E2158E9E1CFE0FE600870600 /* SFCArrayDataSource.h */,
+				E2158E9F1CFE0FE600870600 /* SFCArrayDataSource.m */,
+				E2158EA01CFE0FE600870600 /* SFCContactImporter.h */,
+				E2158EA11CFE0FE600870600 /* SFCContactImporter.m */,
+				E2158EA21CFE0FE600870600 /* SFCContextConsumer.h */,
+				E2158EA31CFE0FE600870600 /* SFCContextSynchronizer.h */,
+				E2158EA41CFE0FE600870600 /* SFCContextSynchronizer.m */,
+				E2158EA51CFE0FE600870600 /* SFCCoreDataStackConsumer.h */,
+				E2158EA61CFE0FE600870600 /* SFCDataSourceDelegate.h */,
+				E2158EA71CFE0FE600870600 /* SFCDataSourceInterface.h */,
+				E2158EA81CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.h */,
+				E2158EA91CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.m */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		E2158EAC1CFE0FE600870600 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EAD1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.h */,
+				E2158EAE1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.m */,
+				E2158EAF1CFE0FE600870600 /* UIColor+SFCViewColors.h */,
+				E2158EB01CFE0FE600870600 /* UIColor+SFCViewColors.m */,
+				E22E6A111D70C28B00A67772 /* UIColor+HexString.h */,
+				E22E6A131D70C2FC00A67772 /* UIColor+HexString.m */,
+				E2158EB11CFE0FE600870600 /* UIImage+SHColoredImage.h */,
+				E2158EB21CFE0FE600870600 /* UIImage+SHColoredImage.m */,
+				E2158EB31CFE0FE600870600 /* UIImage+SHMirrorImage.h */,
+				E2158EB41CFE0FE600870600 /* UIImage+SHMirrorImage.m */,
+				E2158EB51CFE0FE600870600 /* UITableView+SFCAdditions.h */,
+				E2158EB61CFE0FE600870600 /* UITableView+SFCAdditions.m */,
+				E2158EB71CFE0FE600870600 /* UIViewController+SHFillWithView.h */,
+				E2158EB81CFE0FE600870600 /* UIViewController+SHFillWithView.m */,
+				E29709B41D00CBE900C1FE45 /* UIButton+SHButtonAnimation.h */,
+				E29709B51D00CBE900C1FE45 /* UIButton+SHButtonAnimation.m */,
+				E2AF79471D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.h */,
+				E2AF79481D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.m */,
+				E26A74391D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.h */,
+				E26A743A1D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.m */,
+				E26A743C1D7D98E60006181E /* NSDate+SHDateComponents.h */,
+				E26A743D1D7D98E60006181E /* NSDate+SHDateComponents.m */,
+				E27E84D11D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.h */,
+				E27E84D21D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E2158EB91CFE0FE600870600 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EBA1CFE0FE600870600 /* Entities */,
+				E2158ED31CFE0FE600870600 /* SFCCoreDataStack.h */,
+				E2158ED41CFE0FE600870600 /* SFCCoreDataStack.m */,
+				E2158ED51CFE0FE600870600 /* SFCRemoteStoreInterface.h */,
+				E2158ED61CFE0FE600870600 /* FiresideChat.xcdatamodeld */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		E2158EBA1CFE0FE600870600 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EBB1CFE0FE600870600 /* Categories */,
+				E26A74551D7F840E0006181E /* SFCChat+CoreDataProperties.h */,
+				E26A74561D7F840E0006181E /* SFCChat+CoreDataProperties.m */,
+				E2158EC51CFE0FE600870600 /* SFCChat.h */,
+				E2158EC61CFE0FE600870600 /* SFCChat.m */,
+				E2158EC71CFE0FE600870600 /* SFCContact+CoreDataProperties.h */,
+				E2158EC81CFE0FE600870600 /* SFCContact+CoreDataProperties.m */,
+				E2158EC91CFE0FE600870600 /* SFCContact.h */,
+				E2158ECA1CFE0FE600870600 /* SFCContact.m */,
+				E2158ECB1CFE0FE600870600 /* SFCMessage+CoreDataProperties.h */,
+				E2158ECC1CFE0FE600870600 /* SFCMessage+CoreDataProperties.m */,
+				E2158ECD1CFE0FE600870600 /* SFCMessage.h */,
+				E2158ECE1CFE0FE600870600 /* SFCMessage.m */,
+				E2158ECF1CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.h */,
+				E2158ED01CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.m */,
+				E2158ED11CFE0FE600870600 /* SFCPhoneNumber.h */,
+				E2158ED21CFE0FE600870600 /* SFCPhoneNumber.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E2158EBB1CFE0FE600870600 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EBC1CFE0FE600870600 /* Firebase */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E2158EBC1CFE0FE600870600 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E2DAF2781D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.h */,
+				E2DAF2791D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.m */,
+				E2158EBF1CFE0FE600870600 /* SFCContact+SFCFirebaseModel.h */,
+				E2158EC01CFE0FE600870600 /* SFCContact+SFCFirebaseModel.m */,
+				E2158EC11CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.h */,
+				E2158EC21CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.m */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E2158ED81CFE0FE600870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158ED91CFE0FE600870600 /* Adapter */,
+				E2158EE01CFE0FE600870600 /* Animation */,
+				E2158EE31CFE0FE600870600 /* View */,
+				E2158EE41CFE0FE600870600 /* View Delegate */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158ED91CFE0FE600870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EDA1CFE0FE600870600 /* SFCAdapter.h */,
+				E2158EDB1CFE0FE600870600 /* SFCAdapterDelegate.h */,
+				E2158EDC1CFE0FE600870600 /* SFCObjectConsumer.h */,
+				E2158EDD1CFE0FE600870600 /* TableViewAdapter */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158EDD1CFE0FE600870600 /* TableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EDE1CFE0FE600870600 /* SFCTableViewAdapter.h */,
+				E2158EDF1CFE0FE600870600 /* SFCTableViewAdapter.m */,
+			);
+			path = TableViewAdapter;
+			sourceTree = "<group>";
+		};
+		E2158EE01CFE0FE600870600 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EE11CFE0FE600870600 /* SFCKeyboardEventViewAnimator.h */,
+				E2158EE21CFE0FE600870600 /* SFCKeyboardEventViewAnimator.m */,
+				E2DCA7931D0B50B8009595C2 /* SFCShowTextFieldAnimator.h */,
+				E2DCA7941D0B50B8009595C2 /* SFCShowTextFieldAnimator.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		E2158EE31CFE0FE600870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E29709A81CFEA99400C1FE45 /* SFCCustomButton.h */,
+				E29709A91CFEA99400C1FE45 /* SFCCustomButton.m */,
+				E29709B11D00C1C800C1FE45 /* SFCCustomTextField.h */,
+				E29709B21D00C1C800C1FE45 /* SFCCustomTextField.m */,
+				E2EBF6F31D4973B500A58576 /* SFCEdgeInsetsLabel.h */,
+				E2EBF6F41D4973B500A58576 /* SFCEdgeInsetsLabel.m */,
+				E2EBF6F61D498EEC00A58576 /* SFCUserBubbleView.h */,
+				E2EBF6F71D498EEC00A58576 /* SFCUserBubbleView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158EE41CFE0FE600870600 /* View Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E2158EE51CFE0FE600870600 /* SFCChatCreationDelegate.h */,
+				E255A53E1D19B6A000147576 /* SFCLoginStateDelegate.h */,
+			);
+			path = "View Delegate";
+			sourceTree = "<group>";
+		};
+		E2158F7A1CFE18E500870600 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				E255A5381D19160C00147576 /* Root Container */,
+				E27E84E51D8B086500D602C6 /* Select Contacts */,
+				E2158F7B1CFE18E500870600 /* Add Participants */,
+				E2158F871CFE18E500870600 /* Chat */,
+				E2158F961CFE18E500870600 /* Compose Chat */,
+				E2158FA31CFE18E500870600 /* Compose Group */,
+				E2158FA91CFE18E500870600 /* Contacts */,
+				E2158FB21CFE18E500870600 /* Contacts Search Results */,
+				E2158FBA1CFE18E500870600 /* Favorites */,
+				E27E84D41D8A4A9300D602C6 /* Group Chat Details */,
+				E2158FC51CFE18E500870600 /* Messages */,
+				E2158FD61CFE18E500870600 /* Sign Up */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		E2158F7B1CFE18E500870600 /* Add Participants */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F7C1CFE18E500870600 /* User Interface */,
+			);
+			path = "Add Participants";
+			sourceTree = "<group>";
+		};
+		E2158F7C1CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F7D1CFE18E500870600 /* Adapter */,
+				E2158F801CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158F7D1CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F7E1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.h */,
+				E2158F7F1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158F801CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F811CFE18E500870600 /* SFCAddParticipantsViewController.h */,
+				E2158F821CFE18E500870600 /* SFCAddParticipantsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158F871CFE18E500870600 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F8C1CFE18E500870600 /* User Interface */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E2158F8C1CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E26A744E1D7F11600006181E /* Adapter */,
+				E2158F8E1CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158F8E1CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F8F1CFE18E500870600 /* Cells */,
+				E26A74581D7FD06C0006181E /* SFCChatTableViewHeader.h */,
+				E26A74591D7FD06C0006181E /* SFCChatTableViewHeader.m */,
+				E2158F941CFE18E500870600 /* SFCChatViewController.h */,
+				E2158F951CFE18E500870600 /* SFCChatViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158F8F1CFE18E500870600 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F901CFE18E500870600 /* SFCChatTableViewCell.h */,
+				E2158F911CFE18E500870600 /* SFCChatTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E2158F961CFE18E500870600 /* Compose Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F991CFE18E500870600 /* User Interface */,
+			);
+			path = "Compose Chat";
+			sourceTree = "<group>";
+		};
+		E2158F991CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F9A1CFE18E500870600 /* Adapter */,
+				E2158F9D1CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158F9A1CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F9B1CFE18E500870600 /* SFCComposeChatTableViewAdapter.h */,
+				E2158F9C1CFE18E500870600 /* SFCComposeChatTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158F9D1CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F9E1CFE18E500870600 /* Cells */,
+				E2158FA11CFE18E500870600 /* SFCComposeChatViewController.h */,
+				E2158FA21CFE18E500870600 /* SFCComposeChatViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158F9E1CFE18E500870600 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E2158F9F1CFE18E500870600 /* SFCContactCell.h */,
+				E2158FA01CFE18E500870600 /* SFCContactCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E2158FA31CFE18E500870600 /* Compose Group */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FA51CFE18E500870600 /* User Interface */,
+			);
+			path = "Compose Group";
+			sourceTree = "<group>";
+		};
+		E2158FA51CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FA61CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FA61CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FA71CFE18E500870600 /* SFCComposeGroupViewController.h */,
+				E2158FA81CFE18E500870600 /* SFCComposeGroupViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158FA91CFE18E500870600 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FAA1CFE18E500870600 /* User Interface */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		E2158FAA1CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FAB1CFE18E500870600 /* Adapter */,
+				E2158FAE1CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FAB1CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FAC1CFE18E500870600 /* SFCContactsTableViewAdapter.h */,
+				E2158FAD1CFE18E500870600 /* SFCContactsTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158FAE1CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FB01CFE18E500870600 /* SFCContactsViewController.h */,
+				E2158FB11CFE18E500870600 /* SFCContactsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158FB21CFE18E500870600 /* Contacts Search Results */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FB31CFE18E500870600 /* User Interface */,
+			);
+			path = "Contacts Search Results";
+			sourceTree = "<group>";
+		};
+		E2158FB31CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FB41CFE18E500870600 /* Adapter */,
+				E2158FB71CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FB41CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FB51CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.h */,
+				E2158FB61CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158FB71CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FB81CFE18E500870600 /* SFCContactsSearchResultsViewController.h */,
+				E2158FB91CFE18E500870600 /* SFCContactsSearchResultsViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158FBA1CFE18E500870600 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FBB1CFE18E500870600 /* User Interface */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E2158FBB1CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FBC1CFE18E500870600 /* Adapter */,
+				E2158FBF1CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FBC1CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FBD1CFE18E500870600 /* SFCFavoritesTableViewAdapter.h */,
+				E2158FBE1CFE18E500870600 /* SFCFavoritesTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158FBF1CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FC01CFE18E500870600 /* Cells */,
+				E2158FC31CFE18E500870600 /* SFCFavoritesViewController.h */,
+				E2158FC41CFE18E500870600 /* SFCFavoritesViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158FC01CFE18E500870600 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FC11CFE18E500870600 /* SFCFavoriteContactCell.h */,
+				E2158FC21CFE18E500870600 /* SFCFavoriteContactCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E2158FC51CFE18E500870600 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FCA1CFE18E500870600 /* User Interface */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		E2158FCA1CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FCB1CFE18E500870600 /* Adapter */,
+				E2158FCE1CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FCB1CFE18E500870600 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FCC1CFE18E500870600 /* SFCMessagesTableViewAdapter.h */,
+				E2158FCD1CFE18E500870600 /* SFCMessagesTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E2158FCE1CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FCF1CFE18E500870600 /* Cells */,
+				E2158FD21CFE18E500870600 /* SFCMessagesSectionHeaderView.h */,
+				E2158FD31CFE18E500870600 /* SFCMessagesSectionHeaderView.m */,
+				E2158FD41CFE18E500870600 /* SFCMessagesViewController.h */,
+				E2158FD51CFE18E500870600 /* SFCMessagesViewController.m */,
+				E27E84CE1D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.h */,
+				E27E84CF1D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2158FCF1CFE18E500870600 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FD01CFE18E500870600 /* SFCMessageTableViewCell.h */,
+				E2158FD11CFE18E500870600 /* SFCMessageTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E2158FD61CFE18E500870600 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FD71CFE18E500870600 /* User Interface */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		E2158FD71CFE18E500870600 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E2158FD81CFE18E500870600 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		E2158FD81CFE18E500870600 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2DCA7991D0F3179009595C2 /* SignUpViewController.storyboard */,
+				E2158FD91CFE18E500870600 /* SFCSignUpViewController.h */,
+				E2158FDA1CFE18E500870600 /* SFCSignUpViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E22E69F51D6F2BDD00A67772 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E22E69F61D6F2CBB00A67772 /* SFCFirebaseModel.h */,
+				E22E69F71D6F2CBB00A67772 /* SFCFirebaseStore.h */,
+				E22E69F81D6F2CBB00A67772 /* SFCFirebaseStore.m */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		E255A5381D19160C00147576 /* Root Container */ = {
+			isa = PBXGroup;
+			children = (
+				E255A5391D19162000147576 /* View */,
+			);
+			name = "Root Container";
+			sourceTree = "<group>";
+		};
+		E255A5391D19162000147576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E255A53A1D19164900147576 /* SFCRootContainerViewController.h */,
+				E255A53B1D19164900147576 /* SFCRootContainerViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E26A744E1D7F11600006181E /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E27AA8321D82372500520781 /* SFCChatTableViewAdapter.h */,
+				E27AA8331D82372500520781 /* SFCChatTableViewAdapter.m */,
+			);
+			name = Adapter;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E27E84D41D8A4A9300D602C6 /* Group Chat Details */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84D51D8A4BF600D602C6 /* User Interface */,
+			);
+			name = "Group Chat Details";
+			sourceTree = "<group>";
+		};
+		E27E84D51D8A4BF600D602C6 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84D61D8A4C0300D602C6 /* View */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		E27E84D61D8A4C0300D602C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84DA1D8A564D00D602C6 /* Cells */,
+				E27E84D71D8A52D000D602C6 /* SFCGroupDetailsViewController.h */,
+				E27E84D81D8A52D000D602C6 /* SFCGroupDetailsViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E27E84DA1D8A564D00D602C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84DB1D8A569D00D602C6 /* SFCGroupDetailsCell.h */,
+				E27E84DC1D8A569D00D602C6 /* SFCGroupDetailsCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		E27E84E51D8B086500D602C6 /* Select Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84E61D8B087300D602C6 /* User Interface */,
+			);
+			name = "Select Contacts";
+			sourceTree = "<group>";
+		};
+		E27E84E61D8B087300D602C6 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84EF1D8B0AF100D602C6 /* View Controller Delegate */,
+				E27E84E81D8B089900D602C6 /* Adapter */,
+				E27E84E71D8B089000D602C6 /* View */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		E27E84E71D8B089000D602C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84F11D8B173400D602C6 /* SFCSearchField.h */,
+				E27E84F21D8B173400D602C6 /* SFCSearchField.m */,
+				E27E84F31D8B173400D602C6 /* SFCSearchFieldHeaderView.h */,
+				E27E84F41D8B173400D602C6 /* SFCSearchFieldHeaderView.m */,
+				E27E84E91D8B08D500D602C6 /* SFCSelectContactsViewController.h */,
+				E27E84EA1D8B08D500D602C6 /* SFCSelectContactsViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E27E84E81D8B089900D602C6 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84EC1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.h */,
+				E27E84ED1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		E27E84EF1D8B0AF100D602C6 /* View Controller Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E27E84F01D8B0B8C00D602C6 /* SFCSelectContactsDelegate.h */,
+			);
+			name = "View Controller Delegate";
+			sourceTree = "<group>";
+		};
+		E297099C1CFE60D200C1FE45 /* External Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "External Dependencies";
+			sourceTree = "<group>";
+		};
+		E29709AB1D00BE0300C1FE45 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E29709AC1D00BE9700C1FE45 /* Slabo27px.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +1040,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2158E961CFE0EA500870600 /* Build configuration list for PBXNativeTarget "FiresideChat" */;
 			buildPhases = (
+				10EB0164E4EBB91854071C8A /* [CP] Check Pods Manifest.lock */,
 				E2158E701CFE0E9400870600 /* Sources */,
 				E2158E711CFE0E9400870600 /* Frameworks */,
 				E2158E721CFE0E9400870600 /* Resources */,
+				4423FA32F2F03A782A600643 /* [CP] Embed Pods Frameworks */,
+				5876CFA85EC1B129F4B5436B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +1060,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2158E991CFE0EA500870600 /* Build configuration list for PBXNativeTarget "FiresideChatTests" */;
 			buildPhases = (
+				9159C9FE69F40C4CB97ED1E0 /* [CP] Check Pods Manifest.lock */,
 				E2158E891CFE0EA500870600 /* Sources */,
 				E2158E8A1CFE0EA500870600 /* Frameworks */,
 				E2158E8B1CFE0EA500870600 /* Resources */,
+				1A7A3398C5379FD8E7103624 /* [CP] Embed Pods Frameworks */,
+				40987AA875183DA8D28019DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,7 +1083,7 @@
 		E2158E6C1CFE0E9300870600 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sean Hernandez";
 				TargetAttributes = {
 					E2158E731CFE0E9400870600 = {
@@ -193,9 +1121,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2158E871CFE0EA300870600 /* LaunchScreen.storyboard in Resources */,
 				E2158E841CFE0EA300870600 /* Assets.xcassets in Resources */,
-				E2158E821CFE0EA300870600 /* Main.storyboard in Resources */,
+				E29709A61CFEA6FE00C1FE45 /* LaunchScreen.storyboard in Resources */,
+				E292E4861D108BCB00549A94 /* License.rtf in Resources */,
+				E25C21DF1D0F4759007104CD /* GoogleService-Info.plist in Resources */,
+				E29709AD1D00BE9800C1FE45 /* Slabo27px.ttf in Resources */,
+				E2DCA79A1D0F3179009595C2 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,14 +1139,173 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10EB0164E4EBB91854071C8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A7A3398C5379FD8E7103624 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiresideChatTests/Pods-FiresideChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40987AA875183DA8D28019DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiresideChatTests/Pods-FiresideChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4423FA32F2F03A782A600643 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiresideChat/Pods-FiresideChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5876CFA85EC1B129F4B5436B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiresideChat/Pods-FiresideChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9159C9FE69F40C4CB97ED1E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2158E701CFE0E9400870600 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2158E7F1CFE0EA200870600 /* ViewController.m in Sources */,
-				E2158E7C1CFE0EA200870600 /* AppDelegate.m in Sources */,
-				E2158E791CFE0EA200870600 /* main.m in Sources */,
+				E2158FE41CFE18E500870600 /* SFCContactCell.m in Sources */,
+				E2158FE71CFE18E500870600 /* SFCContactsTableViewAdapter.m in Sources */,
+				E29709AA1CFEA99400C1FE45 /* SFCCustomButton.m in Sources */,
+				E2158FDB1CFE18E500870600 /* SFCAddParticipantsTableViewAdapter.m in Sources */,
+				E2158FF01CFE18E500870600 /* SFCMessageTableViewCell.m in Sources */,
+				E2158FEC1CFE18E500870600 /* SFCFavoriteContactCell.m in Sources */,
+				E2158FF91CFE251300870600 /* SFCAppDelegate.m in Sources */,
+				E22E69F91D6F2CBB00A67772 /* SFCFirebaseStore.m in Sources */,
+				E29709B61D00CBE900C1FE45 /* UIButton+SHButtonAnimation.m in Sources */,
+				E2158FE81CFE18E500870600 /* SFCContactsViewController.m in Sources */,
+				E26A743B1D7C61080006181E /* UINavigationBar+SFCNavigationBarAppearance.m in Sources */,
+				E2158EF51CFE0FE600870600 /* SFCChat.m in Sources */,
+				E2EBF6F81D498EEC00A58576 /* SFCUserBubbleView.m in Sources */,
+				E2158EF91CFE0FE600870600 /* SFCMessage.m in Sources */,
+				E2158FE51CFE18E500870600 /* SFCComposeChatViewController.m in Sources */,
+				E2158EE81CFE0FE600870600 /* SFCContextSynchronizer.m in Sources */,
+				E2158EE61CFE0FE600870600 /* SFCArrayDataSource.m in Sources */,
+				E2EBF6F51D4973B500A58576 /* SFCEdgeInsetsLabel.m in Sources */,
+				E27AA8341D82372500520781 /* SFCChatTableViewAdapter.m in Sources */,
+				E2158FDC1CFE18E500870600 /* SFCAddParticipantsViewController.m in Sources */,
+				E2158FF31CFE18E500870600 /* SFCSignUpViewController.m in Sources */,
+				E2158EE71CFE0FE600870600 /* SFCContactImporter.m in Sources */,
+				E2158FEB1CFE18E500870600 /* SFCFavoritesTableViewAdapter.m in Sources */,
+				E2158EEF1CFE0FE600870600 /* UITableView+SFCAdditions.m in Sources */,
+				E2158FE61CFE18E500870600 /* SFCComposeGroupViewController.m in Sources */,
+				E27E84F51D8B173400D602C6 /* SFCSearchField.m in Sources */,
+				E27E84F61D8B173400D602C6 /* SFCSearchFieldHeaderView.m in Sources */,
+				E2158EED1CFE0FE600870600 /* UIImage+SHColoredImage.m in Sources */,
+				E26A745A1D7FD06C0006181E /* SFCChatTableViewHeader.m in Sources */,
+				E2158EFD1CFE0FE600870600 /* FiresideChat.xcdatamodeld in Sources */,
+				E2158EF81CFE0FE600870600 /* SFCMessage+CoreDataProperties.m in Sources */,
+				E2158EEC1CFE0FE600870600 /* UIColor+SFCViewColors.m in Sources */,
+				E2AF79491D255AAD002385B5 /* NSManagedObjectContext+SHSaveContext.m in Sources */,
+				E255A53C1D19164900147576 /* SFCRootContainerViewController.m in Sources */,
+				E2158EE91CFE0FE600870600 /* SFCFetchedResultsControllerDataSource.m in Sources */,
+				E2158EFF1CFE0FE600870600 /* SFCKeyboardEventViewAnimator.m in Sources */,
+				E2158FE01CFE18E500870600 /* SFCChatTableViewCell.m in Sources */,
+				E2158EF01CFE0FE600870600 /* UIViewController+SHFillWithView.m in Sources */,
+				E2158FEA1CFE18E500870600 /* SFCContactsSearchResultsViewController.m in Sources */,
+				E2158EEB1CFE0FE600870600 /* NSNotification+SHKeyboardProperties.m in Sources */,
+				E27E84D01D89D43D00D602C6 /* SFCMessagesParticipantsHeaderView.m in Sources */,
+				E2158EF31CFE0FE600870600 /* SFCMessage+SFCFirebaseModel.m in Sources */,
+				E2158EFB1CFE0FE600870600 /* SFCPhoneNumber.m in Sources */,
+				E2158EF71CFE0FE600870600 /* SFCContact.m in Sources */,
+				E26A743E1D7D98E60006181E /* NSDate+SHDateComponents.m in Sources */,
+				E2158FF11CFE18E500870600 /* SFCMessagesSectionHeaderView.m in Sources */,
+				E2158FFB1CFE507E00870600 /* main.m in Sources */,
+				E26A74571D7F840E0006181E /* SFCChat+CoreDataProperties.m in Sources */,
+				E2158FEF1CFE18E500870600 /* SFCMessagesTableViewAdapter.m in Sources */,
+				E2158FED1CFE18E500870600 /* SFCFavoritesViewController.m in Sources */,
+				E27E84EE1D8B0A7100D602C6 /* SFCSelectContactsTableViewAdapter.m in Sources */,
+				E2DCA7951D0B50B8009595C2 /* SFCShowTextFieldAnimator.m in Sources */,
+				E2158FE31CFE18E500870600 /* SFCComposeChatTableViewAdapter.m in Sources */,
+				E2158FE91CFE18E500870600 /* SFCContactsSearchResultsTableViewAdapter.m in Sources */,
+				E2158FF21CFE18E500870600 /* SFCMessagesViewController.m in Sources */,
+				E2158EF21CFE0FE600870600 /* SFCContact+SFCFirebaseModel.m in Sources */,
+				E2158EFE1CFE0FE600870600 /* SFCTableViewAdapter.m in Sources */,
+				E2DAF27A1D80E6BB00797FD2 /* SFCChat+SFCFirebaseModel.m in Sources */,
+				E2158EEE1CFE0FE600870600 /* UIImage+SHMirrorImage.m in Sources */,
+				E27E84EB1D8B08D500D602C6 /* SFCSelectContactsViewController.m in Sources */,
+				E27E84D31D89E24A00D602C6 /* NSUserDefaults+SHStoredUserDefaults.m in Sources */,
+				E2158EFC1CFE0FE600870600 /* SFCCoreDataStack.m in Sources */,
+				E2158FE21CFE18E500870600 /* SFCChatViewController.m in Sources */,
+				E2158EFA1CFE0FE600870600 /* SFCPhoneNumber+CoreDataProperties.m in Sources */,
+				E27E84D91D8A52D000D602C6 /* SFCGroupDetailsViewController.m in Sources */,
+				E27E84DD1D8A569D00D602C6 /* SFCGroupDetailsCell.m in Sources */,
+				E2158EF61CFE0FE600870600 /* SFCContact+CoreDataProperties.m in Sources */,
+				E22E6A141D70C2FC00A67772 /* UIColor+HexString.m in Sources */,
+				E29709B31D00C1C800C1FE45 /* SFCCustomTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,18 +1328,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E2158E801CFE0EA300870600 /* Main.storyboard */ = {
+		E29709A21CFEA6FE00C1FE45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E2158E811CFE0EA300870600 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E2158E851CFE0EA300870600 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2158E861CFE0EA300870600 /* Base */,
+				E29709A31CFEA6FE00C1FE45 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -271,8 +1353,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -316,8 +1400,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -343,28 +1429,39 @@
 		};
 		E2158E971CFE0EA500870600 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42027F125AFB27B73239104 /* Pods-FiresideChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FiresideChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FiresideChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		E2158E981CFE0EA500870600 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA135EE586091EB1016115A5 /* Pods-FiresideChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FiresideChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.FiresideChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		E2158E9A1CFE0EA500870600 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6573870B50CFBC9BE4930A9A /* Pods-FiresideChatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FiresideChatTests/Info.plist;
@@ -377,6 +1474,7 @@
 		};
 		E2158E9B1CFE0EA500870600 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B644EC6A91EA73841ACDCD /* Pods-FiresideChatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FiresideChatTests/Info.plist;
@@ -406,6 +1504,7 @@
 				E2158E981CFE0EA500870600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2158E991CFE0EA500870600 /* Build configuration list for PBXNativeTarget "FiresideChatTests" */ = {
 			isa = XCConfigurationList;
@@ -414,8 +1513,22 @@
 				E2158E9B1CFE0EA500870600 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2158ED61CFE0FE600870600 /* FiresideChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2158ED71CFE0FE600870600 /* FiresideChat.xcdatamodel */,
+			);
+			currentVersion = E2158ED71CFE0FE600870600 /* FiresideChat.xcdatamodel */;
+			path = FiresideChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E2158E6C1CFE0E9300870600 /* Project object */;
 }

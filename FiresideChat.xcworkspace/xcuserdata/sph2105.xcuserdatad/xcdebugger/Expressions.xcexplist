@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__45-[SFCContextSynchronizer mainContextDidSave:]_block_invoke:SFCContextSynchronizer.m">
+      </ContextState>
+      <ContextState
+         contextName = "+[SFCMessage messageWithText:timestamp:inManagedObjectContext:]:SFCMessage.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SFCMessage setTimestamp:]:SFCMessage.m">
+      </ContextState>
+      <ContextState
+         contextName = "__76-[SFCTableViewAdapter dataSource:didMoveRowsFromIndexPaths:toNewIndexPaths:]_block_invoke:SFCTableViewAdapter.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SFCFetchedResultsControllerDataSource controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:]:SFCFetchedResultsControllerDataSource.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SFCMessagesViewController sendButtonHandler:]:SFCMessagesViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

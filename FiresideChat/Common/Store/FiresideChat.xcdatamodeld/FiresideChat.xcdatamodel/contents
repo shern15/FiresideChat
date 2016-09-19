@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="SFCChat" representedClassName="SFCChat" syncable="YES">
+        <attribute name="lastMessageTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unreadMessagesCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="SFCMessage" inverseName="chat" inverseEntity="SFCMessage" syncable="YES"/>
+        <relationship name="participants" toMany="YES" deletionRule="Nullify" destinationEntity="SFCContact" inverseName="chats" inverseEntity="SFCContact" syncable="YES"/>
+    </entity>
+    <entity name="SFCContact" representedClassName="SFCContact" syncable="YES">
+        <attribute name="contactId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="storageId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chats" toMany="YES" deletionRule="Nullify" destinationEntity="SFCChat" inverseName="participants" inverseEntity="SFCChat" syncable="YES"/>
+        <relationship name="messages" toMany="YES" deletionRule="Nullify" destinationEntity="SFCMessage" inverseName="sender" inverseEntity="SFCMessage" syncable="YES"/>
+        <relationship name="phoneNumbers" toMany="YES" deletionRule="Cascade" destinationEntity="SFCPhoneNumber" inverseName="contact" inverseEntity="SFCPhoneNumber" syncable="YES"/>
+    </entity>
+    <entity name="SFCMessage" representedClassName="SFCMessage" syncable="YES">
+        <attribute name="sectionIdentifier" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="chat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFCChat" inverseName="messages" inverseEntity="SFCChat" syncable="YES"/>
+        <relationship name="sender" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SFCContact" inverseName="messages" inverseEntity="SFCContact" syncable="YES"/>
+    </entity>
+    <entity name="SFCPhoneNumber" representedClassName="SFCPhoneNumber" syncable="YES">
+        <attribute name="isRegistered" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="kind" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contact" maxCount="1" deletionRule="Nullify" destinationEntity="SFCContact" inverseName="phoneNumbers" inverseEntity="SFCContact" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="SFCChat" positionX="-72" positionY="135" width="128" height="133"/>
+        <element name="SFCContact" positionX="142" positionY="225" width="128" height="178"/>
+        <element name="SFCMessage" positionX="333" positionY="216" width="128" height="120"/>
+        <element name="SFCPhoneNumber" positionX="214" positionY="27" width="128" height="103"/>
+    </elements>
+</model>

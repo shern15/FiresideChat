@@ -142,7 +142,7 @@ This screen Lists all the messages received in this thread. From this screen a u
 ###Chat Details
 
 
-![Chat Details](images/GroupDetails.png)
+![Chat Details](images/GroupDetails.png) ![Participant Details](images/GroupContactDetails.png)
 
 This screen lists all the other participants in this chat. Tapping on the Information accessory Button of a row will take you to the Contact Details screen for that particular Contact.
 

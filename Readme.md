@@ -16,7 +16,7 @@ Before the project can be properly run, the Firebase database needs to be proper
 
 First we need to link the iOS App with Firebase. If you already know how to do this, feel free to skip to the next section, "Adding Users to Firebase Database"
 
-1. Sign up for a Firebase account at (https://firebase.google.com) using your Google account.
+1. Sign up for a Firebase account at https://firebase.google.com using your Google account.
 
 2. Once you've signed up, proceed to press Create A New Project and name the project whatever you'd like.
 

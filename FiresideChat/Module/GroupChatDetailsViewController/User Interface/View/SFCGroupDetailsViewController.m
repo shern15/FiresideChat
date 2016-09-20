@@ -72,13 +72,9 @@
 	_tableViewAdapter.delegate = self;
 }
 
-
-//MARK: SFCAdapterDelegate
-- (void)adapter:(id<SFCAdapter>)adapter accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath withObject:(id)object
-{
+- (void)showContactViewControllerForContact:(SFCContact *)contact atIndexPath:(NSIndexPath *)indexPath {
 	NSError *fetchError;
-	SFCContact *coreDataContact = object;
-	CNContact *cnContact = [_contactStore unifiedContactWithIdentifier:coreDataContact.contactId
+	CNContact *cnContact = [_contactStore unifiedContactWithIdentifier:contact.contactId
 														   keysToFetch:@[[CNContactViewController descriptorForRequiredKeys]]
 																 error:&fetchError];
 	
@@ -89,8 +85,20 @@
 	
 	CNContactViewController *contactViewController = [CNContactViewController viewControllerForContact:cnContact];
 	contactViewController.hidesBottomBarWhenPushed = YES;
-	[contactViewController setTitle:[NSString stringWithFormat:@"%@",coreDataContact.fullName]];
+	[contactViewController setTitle:[NSString stringWithFormat:@"%@",contact.fullName]];
 	[self.navigationController pushViewController:contactViewController animated:YES];
+}
+
+//MARK: SFCAdapterDelegate
+- (void)adapter:(id<SFCAdapter>)adapter accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath withObject:(id)object
+{
+	[self showContactViewControllerForContact:object atIndexPath:indexPath];
+}
+
+- (void)adapter:(id<SFCAdapter>)adapter didSelectRowAtIndexPath:(NSIndexPath *)indexPath WithObject:(id)object
+{
+	[self showContactViewControllerForContact:object atIndexPath:indexPath];
+	[_tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 @end
